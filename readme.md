@@ -1,39 +1,27 @@
-# ink-spinner ![test](https://github.com/vadimdemedes/ink-spinner/workflows/test/badge.svg)
+# ink-mdx
 
-> Spinner component for [Ink](https://github.com/vadimdemedes/ink). Uses [cli-spinners](https://github.com/sindresorhus/cli-spinners) for the collection of spinners.
-
-Looking for a version compatible with Ink 2.x? Check out [this release](https://github.com/vadimdemedes/ink-spinner/tree/v3.1.0).
+> Markdown component for [Ink](https://github.com/vadimdemedes/ink). Uses [MDX](https://mdxjs.com/) for markdown rendering.
 
 ## Install
 
 ```
-$ npm install ink-spinner
+$ npm install ink-mdx
 ```
 
 ## Usage
 
 ```jsx
 import React from 'react';
-import {render, Text} from 'ink';
-import Spinner from 'ink-spinner';
+import {render} from 'ink';
+import MDX from 'ink-mdx';
 
-render(
-	<Text>
-		<Text color="green">
-			<Spinner type="dots" />
-		</Text>
-		{' Loading'}
-	</Text>
-);
+render(<MDX content="# Hello" />);
 ```
-
-<img src="media/demo.gif" width="482">
 
 ## Props
 
-### type
+### content
 
 Type: `string`<br>
-Defaults: `dots`
 
-Type of a spinner. See [cli-spinners](https://github.com/sindresorhus/cli-spinners) for available spinners.
+Markdown content. See [MDX documentation](https://mdxjs.com/table-of-components) for available components.
