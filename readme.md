@@ -5,7 +5,7 @@
 ## Install
 
 ```
-$ npm install ink-mdx
+$ npm install https://github.com/stelmakh/ink-mdx
 ```
 
 ## Usage
@@ -25,3 +25,13 @@ render(<MDX content="# Hello" />);
 Type: `string`<br>
 
 Markdown content. See [MDX documentation](https://mdxjs.com/table-of-components) for available components.
+
+#### Supported components
+
+- `p`
+- `h1`
+- `h2`
+- `h3`
+- `h4`
+- `h5`
+- `h6`
