@@ -9,8 +9,29 @@ type MDXElementProps = {
 };
 
 const components = {
+	p: ({children}: MDXElementProps) => <Text>{children}</Text>,
 	h1: ({children}: MDXElementProps) => <Text bold>{children}</Text>,
-	p: ({children}: MDXElementProps) => <Text>{children}</Text>
+	h2: ({children}: MDXElementProps) => (
+		<Text bold dimColor>
+			{children}
+		</Text>
+	),
+	h3: ({children}: MDXElementProps) => (
+		<Text bold inverse>
+			{children}
+		</Text>
+	),
+	h4: ({children}: MDXElementProps) => (
+		<Text bold inverse dimColor>
+			{children}
+		</Text>
+	),
+	h5: ({children}: MDXElementProps) => <Text inverse>{children}</Text>,
+	h6: ({children}: MDXElementProps) => (
+		<Text inverse dimColor>
+			{children}
+		</Text>
+	)
 };
 
 interface Props {
