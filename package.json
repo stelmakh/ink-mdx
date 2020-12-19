@@ -1,0 +1,84 @@
+{
+	"name": "ink-mdx",
+	"version": "0.0.1",
+	"description": "MDX component for Ink",
+	"license": "MIT",
+	"repository": "stelmakh/ink-mdx",
+	"author": {
+		"name": "Volodymyr Stelmakh",
+		"email": "vk.stelmakh@gmail.com",
+		"url": "https://github.com/stelmakh"
+	},
+	"main": "build",
+	"types": "build/index.d.ts",
+	"engines": {
+		"node": ">=10"
+	},
+	"scripts": {
+		"test": "tsc && xo && ava",
+		"prepare": "tsc"
+	},
+	"files": [
+		"build"
+	],
+	"keywords": [
+		"ink",
+		"mdx",
+		"component",
+		"jsx",
+		"react"
+	],
+	"dependencies": {
+		"@mdx-js/react": "^1.6.22",
+		"@mdx-js/runtime": "^1.6.22",
+		"@types/mdx-js__react": "^1.5.3",
+		"import-jsx": "^4.0.0"
+	},
+	"devDependencies": {
+		"@ava/babel": "^1.0.1",
+		"@babel/preset-react": "^7.10.1",
+		"@sindresorhus/tsconfig": "^0.7.0",
+		"@types/react": "^16.9.46",
+		"@vdemedes/prettier-config": "^1.0.0",
+		"ava": "^3.9.0",
+		"delay": "^4.1.0",
+		"eslint-config-xo-react": "^0.23.0",
+		"eslint-plugin-prettier": "^3.3.0",
+		"eslint-plugin-react": "^7.20.0",
+		"eslint-plugin-react-hooks": "^4.0.4",
+		"husky": "^4.2.5",
+		"ink": "^3.0.0-4",
+		"ink-testing-library": "^2.0.0",
+		"prettier": "^2.0.5",
+		"pretty-quick": "^2.0.1",
+		"react": "^16.8.2",
+		"typescript": "^3.9.5",
+		"xo": "^0.32.0"
+	},
+	"peerDependencies": {
+		"react": "^16.8.2",
+		"ink": "^3.0.0-4"
+	},
+	"ava": {
+		"babel": {
+			"testOptions": {
+				"presets": [
+					"@babel/preset-react"
+				]
+			}
+		}
+	},
+	"xo": {
+		"extends": "xo-react",
+		"prettier": true,
+		"rules": {
+			"react/prop-types": "off"
+		}
+	},
+	"prettier": "@vdemedes/prettier-config",
+	"husky": {
+		"hooks": {
+			"pre-commit": "pretty-quick --staged"
+		}
+	}
+}
