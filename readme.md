@@ -5,7 +5,7 @@
 ## Install
 
 ```
-$ npm install https://github.com/stelmakh/ink-mdx
+$ npm install ink-mdx
 ```
 
 ## Usage
