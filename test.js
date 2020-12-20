@@ -107,3 +107,23 @@ test('render ol', t => {
 
 	t.deepEqual(uniqueFrames, expected);
 });
+
+test('render em', t => {
+	const {frames, unmount} = render(<MDXComponent content="_em_" />);
+	unmount();
+
+	const uniqueFrames = [...new Set(frames)];
+	const expected = ['em'];
+
+	t.deepEqual(uniqueFrames, expected);
+});
+
+test('render strong', t => {
+	const {frames, unmount} = render(<MDXComponent content="**strong**" />);
+	unmount();
+
+	const uniqueFrames = [...new Set(frames)];
+	const expected = ['strong'];
+
+	t.deepEqual(uniqueFrames, expected);
+});

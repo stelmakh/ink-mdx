@@ -34,6 +34,8 @@ const components = {
 			{children}
 		</Text>
 	),
+	em: ({children}: ComponentProps) => <Text bold>{children}</Text>,
+	strong: ({children}: ComponentProps) => <Text bold>{children}</Text>,
 	blockquote: Blockquote,
 	li: ListItem,
 	ul: UnorderedList,
