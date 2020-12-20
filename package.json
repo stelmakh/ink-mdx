@@ -1,6 +1,6 @@
 {
 	"name": "ink-mdx",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description": "MDX component for Ink",
 	"license": "MIT",
 	"repository": "stelmakh/ink-mdx",
