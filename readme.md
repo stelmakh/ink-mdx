@@ -28,10 +28,28 @@ Markdown content. See [MDX documentation](https://mdxjs.com/table-of-components)
 
 #### Supported components
 
-- `p`
-- `h1`
-- `h2`
-- `h3`
-- `h4`
-- `h5`
-- `h6`
+- [x] `p`
+- [x] `h1`
+- [x] `h2`
+- [x] `h3`
+- [x] `h4`
+- [x] `h5`
+- [x] `h6`
+- [x] `blockquote`
+- [x] `ul`
+- [x] `ol`
+- [x] `li`
+- [ ] `table`
+- [ ] `thead`
+- [ ] `tbody`
+- [ ] `tr`
+- [ ] `td`/`th`
+- [ ] `code`
+- [ ] `inlineCode`
+- [ ] `pre`
+- [x] `em`
+- [x] `strong`
+- [x] `del`
+- [ ] `hr`
+- [ ] `a`
+- [ ] `img`
