@@ -62,3 +62,18 @@ test('render h6', t => {
 
 	t.deepEqual(uniqueFrames, expected);
 });
+
+test('render blockquote', t => {
+	const content = `
+> blockquote
+> here
+`;
+
+	const {frames, unmount} = render(<MDXComponent content={content} />);
+	unmount();
+
+	const uniqueFrames = [...new Set(frames)];
+	const expected = ['\n\n | blockquote\n | here\n\n'];
+
+	t.deepEqual(uniqueFrames, expected);
+});

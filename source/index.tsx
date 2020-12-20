@@ -3,6 +3,7 @@ import type {FC} from 'react';
 import {Text} from 'ink';
 import {MDXProvider} from '@mdx-js/react';
 import MDXRuntime = require('@mdx-js/runtime');
+import Blockquote from './components/blockquote';
 
 type MDXElementProps = {
 	children: React.ReactNode;
@@ -31,7 +32,8 @@ const components = {
 		<Text inverse dimColor>
 			{children}
 		</Text>
-	)
+	),
+	blockquote: Blockquote
 };
 
 interface Props {
