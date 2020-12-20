@@ -77,3 +77,33 @@ test('render blockquote', t => {
 
 	t.deepEqual(uniqueFrames, expected);
 });
+
+test('render ul', t => {
+	const content = `
+- first
+- second
+`;
+
+	const {frames, unmount} = render(<MDXComponent content={content} />);
+	unmount();
+
+	const uniqueFrames = [...new Set(frames)];
+	const expected = ['\n- first\n- second\n'];
+
+	t.deepEqual(uniqueFrames, expected);
+});
+
+test('render ol', t => {
+	const content = `
+1. first
+1. second
+`;
+
+	const {frames, unmount} = render(<MDXComponent content={content} />);
+	unmount();
+
+	const uniqueFrames = [...new Set(frames)];
+	const expected = ['\n1. first\n2. second\n'];
+
+	t.deepEqual(uniqueFrames, expected);
+});

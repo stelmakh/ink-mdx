@@ -39,3 +39,7 @@ export type MDXComponent = {
 export type ComponentProps = {
 	children: MDXComponent;
 };
+
+export type ListComponentProps = {
+	children: MDXComponent[];
+};
