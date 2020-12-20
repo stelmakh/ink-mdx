@@ -36,6 +36,7 @@ const components = {
 	),
 	em: ({children}: ComponentProps) => <Text bold>{children}</Text>,
 	strong: ({children}: ComponentProps) => <Text bold>{children}</Text>,
+	del: ({children}: ComponentProps) => <Text strikethrough>{children}</Text>,
 	blockquote: Blockquote,
 	li: ListItem,
 	ul: UnorderedList,

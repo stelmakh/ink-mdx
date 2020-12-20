@@ -127,3 +127,15 @@ test('render strong', t => {
 
 	t.deepEqual(uniqueFrames, expected);
 });
+
+test('render strikethrough', t => {
+	const {frames, unmount} = render(
+		<MDXComponent content="~~strikethrough~~" />
+	);
+	unmount();
+
+	const uniqueFrames = [...new Set(frames)];
+	const expected = ['strikethrough'];
+
+	t.deepEqual(uniqueFrames, expected);
+});
