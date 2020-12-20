@@ -1,4 +1,4 @@
-# ink-mdx
+# ink-mdx ![test](https://github.com/stelmakh/ink-mdx/workflows/test/badge.svg)
 
 > Markdown component for [Ink](https://github.com/vadimdemedes/ink). Uses [MDX](https://mdxjs.com/) for markdown rendering.
 
